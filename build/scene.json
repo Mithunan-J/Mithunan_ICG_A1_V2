@@ -1,0 +1,728 @@
+{
+	"ambient": {
+		"x": 0.10000000149011612,
+		"y": 0.10000000149011612,
+		"z": 0.10000000149011612
+	},
+	"default_material": "null",
+	"lights": [
+		{
+			"color": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"position": {
+				"x": 0.0,
+				"y": 1.0,
+				"z": 3.0
+			},
+			"range": 100.0
+		}
+	],
+	"main_camera": "de49da72-744e-ad46-a421-23b08daf1ffd",
+	"objects": [
+		{
+			"children": [],
+			"components": {
+				"Gameplay::Camera": {
+					"clear_color": {
+						"w": -431602080.0,
+						"x": -431602080.0,
+						"y": -431602080.0,
+						"z": -431602080.0
+					},
+					"enabled": true,
+					"far_plane": 1000.0,
+					"fov_radians": 1.5707963705062866,
+					"guid": "de49da72-744e-ad46-a421-23b08daf1ffd",
+					"near_plane": 0.10000000149011612,
+					"ortho_enabled": false,
+					"ortho_size": 10.0
+				},
+				"SimpleCameraControl": {
+					"enabled": true,
+					"guid": "a80f5448-8b40-d34f-870b-08fa79f323c3",
+					"mouse_sensitivity": {
+						"x": 0.5,
+						"y": 0.30000001192092896
+					},
+					"move_speed": {
+						"x": 1.0,
+						"y": 1.0,
+						"z": 1.0
+					},
+					"shift_mult": 2.0
+				}
+			},
+			"guid": "59215db8-27f7-9a47-99c7-c3aa28b22b4d",
+			"hide_in_inspector": false,
+			"name": "Main Camera",
+			"parent": "null",
+			"position": {
+				"x": -3.809999942779541,
+				"y": 0.09000000357627869,
+				"z": 6.25
+			},
+			"rotation": {
+				"w": 0.5844963788986206,
+				"x": 0.387157142162323,
+				"y": -0.3937748074531555,
+				"z": -0.5944870114326477
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"Gameplay::Physics::RigidBody": {
+					"angular_damping": 0.004999999888241291,
+					"colliders": [
+						{
+							"extents": {
+								"x": 50.0,
+								"y": 50.0,
+								"z": 1.0
+							},
+							"guid": "68c93b81-691a-b844-a917-2c4e464d6bea",
+							"position": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": -1.0
+							},
+							"rotation": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							},
+							"scale": {
+								"x": 1.0,
+								"y": 1.0,
+								"z": 1.0
+							},
+							"type": "Box"
+						}
+					],
+					"enabled": true,
+					"group": 1,
+					"guid": "463afe0a-6d09-a247-b29c-06f81d06d7d8",
+					"linear_damping": 0.0,
+					"mask": -1,
+					"mass": 1.0,
+					"type": "Static"
+				},
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "0b45e07c-5869-004c-bbc1-bd0bd88c445f",
+					"material": "828fb62e-ead0-c045-ab1f-c45289ab65dd",
+					"mesh": "be2f475d-b9e7-0e4c-b07f-7bd2a9cd7eee"
+				}
+			},
+			"guid": "1af8e9d1-f8db-a049-ae10-6af39587cada",
+			"hide_in_inspector": false,
+			"name": "Plane",
+			"parent": "null",
+			"position": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": null,
+			"guid": "7d56fac0-e443-f541-872f-8f450c363794",
+			"hide_in_inspector": false,
+			"name": "Demo Parent",
+			"parent": "null",
+			"position": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [
+				{
+					"children": [],
+					"components": {
+						"JumpBehaviour": {
+							"enabled": true,
+							"guid": "c4f00bc7-2d4c-044d-a86e-706ca3b09cfd",
+							"impulse": 10.0
+						},
+						"RenderComponent": {
+							"enabled": true,
+							"guid": "1b34e983-ddd3-cf4b-99f4-e5072ad514f3",
+							"material": "abdde76f-ecbc-2349-8463-631ee2582a23",
+							"mesh": "cad0d317-241e-7b40-83ec-b69e39ef087f"
+						},
+						"RotatingBehaviour": {
+							"enabled": true,
+							"guid": "1253780d-846d-454a-84b3-2ea09c85c551",
+							"speed": {
+								"x": 90.0,
+								"y": 0.0,
+								"z": 0.0
+							}
+						},
+						"TestComponent": {
+							"enabled": true,
+							"guid": "0ffed0a8-5a2b-4045-9d59-5c81043b2f80",
+							"test": 10.0
+						}
+					},
+					"guid": "f7e0b892-4538-8f40-a8d4-167146ee4c04",
+					"hide_in_inspector": false,
+					"name": "King Monkey",
+					"parent": "f8b7e43f-30f7-3147-ac45-b8a75d9cbe8b",
+					"position": {
+						"x": 1.5,
+						"y": 0.0,
+						"z": 4.0
+					},
+					"rotation": {
+						"w": 1.0,
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0
+					},
+					"scale": {
+						"x": 1.0,
+						"y": 1.0,
+						"z": 1.0
+					}
+				},
+				{
+					"children": [],
+					"components": {
+						"RenderComponent": {
+							"enabled": true,
+							"guid": "20dc2941-0a6d-c447-a699-fb3d040b574e",
+							"material": "7c8cc7e8-6b33-d74c-b347-1929a3011fd8",
+							"mesh": "970a616c-6364-0445-bbb9-5a211f36c198"
+						},
+						"RotatingBehaviour": {
+							"enabled": true,
+							"guid": "0c420b4e-e14a-d343-9708-b543c2e8e8b9",
+							"speed": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 90.0
+							}
+						},
+						"TestComponent": {
+							"enabled": true,
+							"guid": "782fd4e9-f81f-8944-8434-cb9271ebf272",
+							"test": 10.0
+						}
+					},
+					"guid": "1d74c9af-8b57-9d4a-8808-dd313cadec0b",
+					"hide_in_inspector": false,
+					"name": "Left Pillar",
+					"parent": "f8b7e43f-30f7-3147-ac45-b8a75d9cbe8b",
+					"position": {
+						"x": 1.5,
+						"y": 2.700000047683716,
+						"z": 4.0
+					},
+					"rotation": {
+						"w": 1.0,
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0
+					},
+					"scale": {
+						"x": 1.0,
+						"y": 1.0,
+						"z": 1.0
+					}
+				},
+				{
+					"children": [],
+					"components": {
+						"RenderComponent": {
+							"enabled": true,
+							"guid": "9593e840-d544-6442-99ff-72e0b85d1a1a",
+							"material": "7c8cc7e8-6b33-d74c-b347-1929a3011fd8",
+							"mesh": "3fd5ca00-5ae7-d94c-b7a1-f309e50f4354"
+						},
+						"RotatingBehaviour": {
+							"enabled": true,
+							"guid": "6f9b13f0-c67c-9747-84ab-63b19c742142",
+							"speed": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 90.0
+							}
+						},
+						"TestComponent": {
+							"enabled": true,
+							"guid": "28c17051-fe5f-b247-bb2d-54fbeed153be",
+							"test": 10.0
+						}
+					},
+					"guid": "8a6272dd-3a8b-8e42-a011-dc299af4cc86",
+					"hide_in_inspector": false,
+					"name": "Right Pillar",
+					"parent": "f8b7e43f-30f7-3147-ac45-b8a75d9cbe8b",
+					"position": {
+						"x": 1.5,
+						"y": -2.700000047683716,
+						"z": 4.0
+					},
+					"rotation": {
+						"w": 1.0,
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0
+					},
+					"scale": {
+						"x": 1.0,
+						"y": 1.0,
+						"z": 1.0
+					}
+				},
+				{
+					"children": [],
+					"components": {
+						"RenderComponent": {
+							"enabled": true,
+							"guid": "aaa574da-0e96-d44d-8b57-87aea95cbd16",
+							"material": "635407b4-0efd-7145-a97d-80f3394e867e",
+							"mesh": "a3883614-8433-5247-b664-6a9cc2fba944"
+						},
+						"RotatingBehaviour": {
+							"enabled": true,
+							"guid": "d6f4f097-d006-0a46-b5a9-7249fb1ac844",
+							"speed": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": -90.0
+							}
+						},
+						"TestComponent": {
+							"enabled": true,
+							"guid": "77656d30-49c3-8d4c-bafd-5495fde5adac",
+							"test": 10.0
+						}
+					},
+					"guid": "a75dd8ee-61b1-b141-93e6-50778c2f4414",
+					"hide_in_inspector": false,
+					"name": "Left Flame",
+					"parent": "f8b7e43f-30f7-3147-ac45-b8a75d9cbe8b",
+					"position": {
+						"x": 1.5,
+						"y": 2.700000047683716,
+						"z": 5.0
+					},
+					"rotation": {
+						"w": 1.0,
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0
+					},
+					"scale": {
+						"x": 0.4000000059604645,
+						"y": 0.4000000059604645,
+						"z": 0.4000000059604645
+					}
+				},
+				{
+					"children": [],
+					"components": {
+						"RenderComponent": {
+							"enabled": true,
+							"guid": "5ca85b04-d75c-9646-b76f-5338ea726ab0",
+							"material": "635407b4-0efd-7145-a97d-80f3394e867e",
+							"mesh": "a3883614-8433-5247-b664-6a9cc2fba944"
+						},
+						"RotatingBehaviour": {
+							"enabled": true,
+							"guid": "bf7602ae-7cb7-454b-88a7-bf4ca781cb5d",
+							"speed": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": -90.0
+							}
+						},
+						"TestComponent": {
+							"enabled": true,
+							"guid": "2a5729f2-df6b-3b4d-98cd-ead4631befb0",
+							"test": 10.0
+						}
+					},
+					"guid": "9631f827-cb47-8248-92b6-a2158538710b",
+					"hide_in_inspector": false,
+					"name": "Right Flame",
+					"parent": "f8b7e43f-30f7-3147-ac45-b8a75d9cbe8b",
+					"position": {
+						"x": 1.5,
+						"y": -2.700000047683716,
+						"z": 5.0
+					},
+					"rotation": {
+						"w": 1.0,
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0
+					},
+					"scale": {
+						"x": 0.4000000059604645,
+						"y": 0.4000000059604645,
+						"z": 0.4000000059604645
+					}
+				}
+			],
+			"components": null,
+			"guid": "f8b7e43f-30f7-3147-ac45-b8a75d9cbe8b",
+			"hide_in_inspector": false,
+			"name": "Show Floor",
+			"parent": "null",
+			"position": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"JumpBehaviour": {
+					"enabled": true,
+					"guid": "c4f00bc7-2d4c-044d-a86e-706ca3b09cfd",
+					"impulse": 10.0
+				},
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "1b34e983-ddd3-cf4b-99f4-e5072ad514f3",
+					"material": "abdde76f-ecbc-2349-8463-631ee2582a23",
+					"mesh": "cad0d317-241e-7b40-83ec-b69e39ef087f"
+				},
+				"RotatingBehaviour": {
+					"enabled": true,
+					"guid": "1253780d-846d-454a-84b3-2ea09c85c551",
+					"speed": {
+						"x": 90.0,
+						"y": 0.0,
+						"z": 0.0
+					}
+				},
+				"TestComponent": {
+					"enabled": true,
+					"guid": "0ffed0a8-5a2b-4045-9d59-5c81043b2f80",
+					"test": 10.0
+				}
+			},
+			"guid": "f7e0b892-4538-8f40-a8d4-167146ee4c04",
+			"hide_in_inspector": false,
+			"name": "King Monkey",
+			"parent": "f8b7e43f-30f7-3147-ac45-b8a75d9cbe8b",
+			"position": {
+				"x": 1.5,
+				"y": 0.0,
+				"z": 4.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "20dc2941-0a6d-c447-a699-fb3d040b574e",
+					"material": "7c8cc7e8-6b33-d74c-b347-1929a3011fd8",
+					"mesh": "970a616c-6364-0445-bbb9-5a211f36c198"
+				},
+				"RotatingBehaviour": {
+					"enabled": true,
+					"guid": "0c420b4e-e14a-d343-9708-b543c2e8e8b9",
+					"speed": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 90.0
+					}
+				},
+				"TestComponent": {
+					"enabled": true,
+					"guid": "782fd4e9-f81f-8944-8434-cb9271ebf272",
+					"test": 10.0
+				}
+			},
+			"guid": "1d74c9af-8b57-9d4a-8808-dd313cadec0b",
+			"hide_in_inspector": false,
+			"name": "Left Pillar",
+			"parent": "f8b7e43f-30f7-3147-ac45-b8a75d9cbe8b",
+			"position": {
+				"x": 1.5,
+				"y": 2.700000047683716,
+				"z": 4.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "9593e840-d544-6442-99ff-72e0b85d1a1a",
+					"material": "7c8cc7e8-6b33-d74c-b347-1929a3011fd8",
+					"mesh": "3fd5ca00-5ae7-d94c-b7a1-f309e50f4354"
+				},
+				"RotatingBehaviour": {
+					"enabled": true,
+					"guid": "6f9b13f0-c67c-9747-84ab-63b19c742142",
+					"speed": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 90.0
+					}
+				},
+				"TestComponent": {
+					"enabled": true,
+					"guid": "28c17051-fe5f-b247-bb2d-54fbeed153be",
+					"test": 10.0
+				}
+			},
+			"guid": "8a6272dd-3a8b-8e42-a011-dc299af4cc86",
+			"hide_in_inspector": false,
+			"name": "Right Pillar",
+			"parent": "f8b7e43f-30f7-3147-ac45-b8a75d9cbe8b",
+			"position": {
+				"x": 1.5,
+				"y": -2.700000047683716,
+				"z": 4.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "aaa574da-0e96-d44d-8b57-87aea95cbd16",
+					"material": "635407b4-0efd-7145-a97d-80f3394e867e",
+					"mesh": "a3883614-8433-5247-b664-6a9cc2fba944"
+				},
+				"RotatingBehaviour": {
+					"enabled": true,
+					"guid": "d6f4f097-d006-0a46-b5a9-7249fb1ac844",
+					"speed": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": -90.0
+					}
+				},
+				"TestComponent": {
+					"enabled": true,
+					"guid": "77656d30-49c3-8d4c-bafd-5495fde5adac",
+					"test": 10.0
+				}
+			},
+			"guid": "a75dd8ee-61b1-b141-93e6-50778c2f4414",
+			"hide_in_inspector": false,
+			"name": "Left Flame",
+			"parent": "f8b7e43f-30f7-3147-ac45-b8a75d9cbe8b",
+			"position": {
+				"x": 1.5,
+				"y": 2.700000047683716,
+				"z": 5.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 0.4000000059604645,
+				"y": 0.4000000059604645,
+				"z": 0.4000000059604645
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "5ca85b04-d75c-9646-b76f-5338ea726ab0",
+					"material": "635407b4-0efd-7145-a97d-80f3394e867e",
+					"mesh": "a3883614-8433-5247-b664-6a9cc2fba944"
+				},
+				"RotatingBehaviour": {
+					"enabled": true,
+					"guid": "bf7602ae-7cb7-454b-88a7-bf4ca781cb5d",
+					"speed": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": -90.0
+					}
+				},
+				"TestComponent": {
+					"enabled": true,
+					"guid": "2a5729f2-df6b-3b4d-98cd-ead4631befb0",
+					"test": 10.0
+				}
+			},
+			"guid": "9631f827-cb47-8248-92b6-a2158538710b",
+			"hide_in_inspector": false,
+			"name": "Right Flame",
+			"parent": "f8b7e43f-30f7-3147-ac45-b8a75d9cbe8b",
+			"position": {
+				"x": 1.5,
+				"y": -2.700000047683716,
+				"z": 5.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 0.4000000059604645,
+				"y": 0.4000000059604645,
+				"z": 0.4000000059604645
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"Gameplay::Physics::TriggerVolume": {
+					"colliders": [
+						{
+							"guid": "49cb4c81-f326-c340-8203-0e61af3ad5f8",
+							"half_extents": {
+								"x": 3.0,
+								"y": 3.0,
+								"z": 1.0
+							},
+							"position": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.5
+							},
+							"rotation": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							},
+							"scale": {
+								"x": 1.0,
+								"y": 1.0,
+								"z": 1.0
+							},
+							"type": "Cylinder"
+						}
+					],
+					"enabled": true,
+					"group": 1,
+					"guid": "134da1a7-f2aa-9c41-9664-2d98b2ad455b",
+					"mask": -1
+				},
+				"TriggerVolumeEnterBehaviour": {
+					"enabled": true,
+					"guid": "7b43bf12-eef7-5347-ae1a-bb299eb292a2"
+				}
+			},
+			"guid": "89af5a0e-1cc8-264a-bb0f-f8f71dcf9339",
+			"hide_in_inspector": false,
+			"name": "Trigger",
+			"parent": "null",
+			"position": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		}
+	],
+	"skybox": {
+		"mesh": "null",
+		"orientation": {
+			"w": 1.0,
+			"x": 0.0,
+			"y": 0.0,
+			"z": 0.0
+		},
+		"shader": "null",
+		"texture": "null"
+	}
+}
